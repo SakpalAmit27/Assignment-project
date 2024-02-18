@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Slider</title>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide" id="slide1">
+      <div class="caption"><i style="font-size: larger;">Mozart</i></div>
+      <img src="mozart.jpg" alt="Image 1">
+    </div>
+    <div class="slide" id="slide2">
+      <div class="caption"><i style="font-size: larger;">F choppin</i></div>
+      <img src="fredchoppin.jpg" alt="Image 2">
+    </div>
+    <div class="slide" id="slide3">
+      <div class="caption"><i style="font-size: larger;">JS Bach</i></div>
+      <img src="bach.jpg" alt="Image 3">
+    </div>
+    <div class="slide" id="slide4">
+      <div class="caption"><i style="font-size: larger;">Beethoven</i></div>
+      <img src="beethoven.jpg" alt="Image 4">
+    </div>
+  </div>
+
+  <button class="prev-btn" onclick="changeSlide(-1)">Previous</button>
+  <button class="next-btn" onclick="changeSlide(1)">Next</button>
+  <button class="play-pause-btn" onclick="togglePlayPause()">Play/Pause</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
