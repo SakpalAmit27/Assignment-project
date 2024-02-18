@@ -23,9 +23,9 @@ function togglePlayPause() {
     clearInterval(autoPlayInterval);
   } else {
     playPauseButton.innerHTML = 'Pause';
-    autoPlayInterval = setInterval(() => changeSlide(1), 2000); // Change slide every 2 seconds
+    autoPlayInterval = setInterval(() => changeSlide(1), 2000); // this will change linke every 2 seconds // 
   }
 }
 
-// Start auto play
+// a function to autoplay // 
 togglePlayPause();
